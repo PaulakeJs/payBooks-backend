@@ -6,7 +6,7 @@ const connectDB = require("./connectDB");
 const Book = require("./modles/Books");
 
 const app = express();
-const PORT = process.env.PORT || 7000;
+const PORT = 7000;
 
 connectDB();
 app.use(cors());
