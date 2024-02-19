@@ -6,7 +6,7 @@ const connectDB = require("./connectDB");
 const Book = require("./modles/Books");
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 7000;
 
 connectDB();
 app.use(cors());
@@ -133,5 +133,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`server is running on ${PORT}`);
+  console.log(`NodeJS server is running on http://localhost:${PORT}`);
 });
